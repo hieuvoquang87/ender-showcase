@@ -71,7 +71,7 @@ const LeaseListContainer = () => {
       {leases.map((lease) => {
         const primaryContact = getPrimaryContact(lease.contacts);
         return (
-          <TableRow>
+          <TableRow key={lease.id}>
             <div>{lease.companyName}</div>
             <div>{lease.startDate}</div>
             <div>{lease.inclusiveEndDate}</div>

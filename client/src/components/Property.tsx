@@ -24,7 +24,10 @@ const PropertyComponent = ({
     property.sqft
   );
   return (
-    <StyledProperty onClick={() => onPropertySelected(property)}>
+    <StyledProperty
+      data-testid={`property-${property.id}`}
+      onClick={() => onPropertySelected(property)}
+    >
       <Column>
         <Row style={{ borderBottom: '1px solid black' }}>
           <strong>{property.name}</strong>

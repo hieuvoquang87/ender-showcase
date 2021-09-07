@@ -36,6 +36,7 @@ const PropertyListContainer = () => {
       {properties.map((property) => {
         return (
           <PropertyComponent
+            key={property.id}
             property={property}
             onPropertySelected={setSelectedProperty}
           />
