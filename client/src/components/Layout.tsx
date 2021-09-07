@@ -6,7 +6,7 @@ export const Page = styled.div`
   max-width: 1000px;
   height: 100vh;
   margin: auto;
-  padding: 24px 0;
+  padding: 24px;
 `;
 
 export const Column = styled.div`

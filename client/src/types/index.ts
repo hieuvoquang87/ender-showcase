@@ -8,7 +8,7 @@ export interface Property {
   baseRent: string;
 }
 
-interface Contact {
+export interface Contact {
   id: string;
   phone: string;
   email: string;
